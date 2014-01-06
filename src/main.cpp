@@ -2063,7 +2063,7 @@ bool LoadBlockIndex(bool fAllowNew)
             return false;
 
         // Genesis block
-        const char* pszTimestamp = "June 7 2013, The Times, Prince Philip admitted to hospital for two weeks";
+        const char* pszTimestamp = "January 6 2014, NY Times, Justices Block Gay Marriage in Utah During Appeal of Case";
         CTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -2075,7 +2075,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1370579804;
+        block.nTime    = 1389045600;
         block.nBits    = 0x1e0fffff;
         block.nNonce   = 2788;
 
