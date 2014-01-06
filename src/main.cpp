@@ -877,8 +877,8 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 }
 
 	//New Protocol
-	static int64 nTargetTimespan = 10 * 60; // Retarget every 10 blocks (10 minutes)
-	static int64 nTargetSpacing = 1 * 60; // 60 seconds
+	static int64 nTargetTimespan = 240 * 45; // Retarget every 240 blocks (3 hours)
+	static int64 nTargetSpacing = 1 * 45; // 60 seconds
 
 //
 // minimum amount of work that could possibly be required nTime after

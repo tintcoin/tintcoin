@@ -539,7 +539,7 @@ public:
     {
         // Large (in bytes) low-priority (new, small-coin) transactions
         // need a fee.
-        return dPriority > COIN * 480 / 250; // TintCoin: 480 blocks found a day. Priority cutoff is 1 TintCoin day / 250 bytes.
+        return dPriority > COIN * 1920 / 250; // TintCoin: 480 blocks found a day. Priority cutoff is 1 TintCoin day / 250 bytes.
     }
 
     int64 GetMinFee(unsigned int nBlockSize=1, bool fAllowFree=true, enum GetMinFee_mode mode=GMF_BLOCK) const
