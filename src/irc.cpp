@@ -1,7 +1,7 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2012 The Bitcoin developers
 // Copyright (c) 2011-2012 Litecoin Developers
-// Copyright (c) 2013 StableCoin Developers
+// Copyright (c) 2013 TintCoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -295,14 +295,14 @@ void ThreadIRCSeed2(void* parg)
         }
         
         if (fTestNet) {
-            Send(hSocket, "JOIN #StableCoinTEST3\r");
-            Send(hSocket, "WHO #StableCoinTEST3\r");
+            Send(hSocket, "JOIN #TintCoinTEST3\r");
+            Send(hSocket, "WHO #TintCoinTEST3\r");
         } else {
-            // randomly join #StableCoin00-#StableCoin99
+            // randomly join #TintCoin00-#TintCoin99
             int channel_number = GetRandInt(100);
-            channel_number = 0; // StableCoin: for now, just use one channel
-            Send(hSocket, strprintf("JOIN #StableCoin%02d\r", channel_number).c_str());
-            Send(hSocket, strprintf("WHO #StableCoin%02d\r", channel_number).c_str());
+            channel_number = 0; // TintCoin: for now, just use one channel
+            Send(hSocket, strprintf("JOIN #TintCoin%02d\r", channel_number).c_str());
+            Send(hSocket, strprintf("WHO #TintCoin%02d\r", channel_number).c_str());
         }
 
         int64 nStart = GetTime();
